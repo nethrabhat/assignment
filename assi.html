@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kudla Tourism</title>
+  <style>
+    body {font-family: Arial, sans-serif; margin:0; padding:0; background:#f9f9f9; color:#222;}
+    header {background:#007b7b; color:#fff; padding:10px 20px; position:sticky; top:0;}
+    nav a {color:white; margin:0 10px; text-decoration:none; font-weight:bold;}
+    nav a:hover{text-decoration:underline;}
+    section {padding:20px; max-width:1000px; margin:auto;}
+    h1,h2 {color:#007b7b;}
+    .grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:15px;}
+    .card {background:white; border-radius:8px; box-shadow:0 2px 4px rgba(0,0,0,0.1); padding:10px;}
+    .card img{width:100%; height:150px; object-fit:cover; border-radius:6px;}
+    iframe {width:100%; height:500px; border:1px solid #ddd;}
+    footer {text-align:center; padding:15px; background:#007b7b; color:white;}
+    input,textarea,button {width:100%; padding:8px; margin:5px 0; border:1px solid #ccc; border-radius:5px;}
+    button{background:#007b7b; color:white; border:none; cursor:pointer;}
+    button:hover{background:#005f5f;}
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Kudla Tourism</h1>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#guides">Guides</a>
+    <a href="#blog">Blog</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="home">
+  <h2>Welcome to Kudla</h2>
+  <p>Discover the beaches, culture, and food of Mangalore — the heart of coastal Karnataka.</p>
+  <div class="grid">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b?auto=format&fit=crop&w=800&q=60" alt="">
+      <h3>Panambur Beach</h3>
+      <p>Relax by the sea and enjoy sunset views.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?auto=format&fit=crop&w=800&q=60" alt="">
+      <h3>Mangaladevi Temple</h3>
+      <p>Historic temple and cultural landmark.</p>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=60" alt="">
+      <h3>Local Cuisine</h3>
+      <p>Try Kori Rotti, Neer Dosa, and Fish Curry.</p>
+    </div>
+  </div>
+
+  <h3>Project PDF</h3>
+  <iframe src="Tourism Website - Kudla.pdf"></iframe>
+</section>
+
+<section id="destinations">
+  <h2>Popular Destinations</h2>
+  <div class="grid">
+    <div class="card"><h3>Someshwar Beach</h3><p>Peaceful coast with scenic rocks.</p></div>
+    <div class="card"><h3>Kadri Park</h3><p>Green retreat for families and joggers.</p></div>
+    <div class="card"><h3>Pilikula Nisargadhama</h3><p>Eco park with zoo, boating, and heritage village.</p></div>
+  </div>
+</section>
+
+<section id="guides">
+  <h2>Meet Our Guides</h2>
+  <div class="grid">
+    <div class="card"><h3>Ravi Kumar</h3><p>Heritage and temple guide.</p></div>
+    <div class="card"><h3>Leela D’Souza</h3><p>Food and culture specialist.</p></div>
+  </div>
+</section>
+
+<section id="blog">
+  <h2>Travel Stories</h2>
+  <div class="grid">
+    <div class="card"><h3>Sunset at Panambur</h3><p>A calm evening by the coast.</p></div>
+    <div class="card"><h3>Inside Mangaladevi Temple</h3><p>Festivals and traditions.</p></div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About This Project</h2>
+  <p>This website was built using HTML to showcase Kudla’s tourism highlights and includes the official project PDF above.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact Us</h2>
+  <form onsubmit="event.preventDefault(); alert('Message sent!')">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="4" placeholder="Message"></textarea>
+    <button type="submit">Send</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Kudla Tourism | Designed for speed and simplicity</p>
+</footer>
+
+</body>
+</html>
